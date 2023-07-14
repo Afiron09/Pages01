@@ -1,18 +1,29 @@
 :root {
   --font-prime: "Inter", sans-serif;
   --font-second: "Cardo", serif;
+  --white: #ffffff;
+  --yelow: #ffca42;
+  --blue: #b4c7e7;
+  --black: #141414;
+  --grey: #969aa0;
+  --white-font: #f6f8fc;
+  --bg: #1b3764;
 }
 
 body {
   font-family: var(--font-prime);
+  background-color: var(--white);
+  color: var(--grey);
 }
 
 p,
 h1,
 h2,
-h3 {
-  margin-top: 0;
-  margin-bottom: 0;
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
 
 ul,
@@ -20,17 +31,106 @@ ol {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
-}
-
-.link {
-  text-decoration: none;
-}
-
-.list {
   list-style: none;
 }
 
-/* ----------Header------- */
+a {
+  text-decoration: none;
+}
 
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+}
+
+/* ----------Header------- */
 .container {
+  max-width: 1330px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid #b4c7e7;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  background-color: var(--bg);
+}
+.header-logo {
+  margin-right: 35px;
+}
+.header-social-list {
+  display: flex;
+  margin-right: 260px;
+}
+.header-social-item {
+  width: 45px;
+  height: 45px;
+  border: 2px solid var(--white);
+  background-color: var(--white);
+}
+
+.header-social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.header-social-link {
+  height: 100%;
+  width: 100%;
+}
+.header-nav {
+}
+.header-nav-list {
+  display: flex;
+}
+.header-nav-item {
+}
+
+.header-nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-link {
+  display: block;
+  color: var(--white-font);
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  padding-top: 43px;
+  padding-bottom: 43px;
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: var(--yelow);
+}
+
+.header-btn {
+  min-width: 222px;
+  height: 66px;
+  border: 2px solid var(--yelow);
+  background: var(--yelow);
+  color: var(--bg);
+  font-family: Cardo, sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.03;
+  text-transform: capitalize;
+  margin-left: 107px;
 }
