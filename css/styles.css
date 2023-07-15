@@ -167,7 +167,11 @@ img {
   align-items: center;
 }
 
+.hero-left-cont {
+}
+
 .hero-subtitle {
+  position: relative;
   color: var(--white);
   font-family: Cardo, serif;
   font-size: 21px;
@@ -177,6 +181,17 @@ img {
   letter-spacing: 0.05em;
   text-transform: capitalize;
   margin-bottom: 10px;
+  padding-left: 53px;
+}
+
+.hero-subtitle::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 17px;
+  width: 35px;
+  height: 2px;
+  background-color: var(--yelow);
 }
 
 .hero-title {
@@ -262,3 +277,100 @@ img {
 /* ----------HERO------- end*/
 
 /* ----------two------- start*/
+
+.two {
+  padding-top: 126px;
+  padding-bottom: 90px;
+}
+
+.two-container {
+  display: flex;
+}
+.two-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 23px;
+  color: var(--bg);
+  text-align: center;
+  font-family: Cardo, serif;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+  text-transform: capitalize;
+}
+.two-list {
+  display: flex;
+}
+.two-item {
+}
+.two-img {
+  margin-right: 30px;
+}
+.two-subtitle {
+  color: var(--bg);
+  font-family: Cardo, serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  margin-bottom: 7px;
+}
+
+.two-span {
+  color: var(--yelow);
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.57;
+  margin-bottom: 17px;
+}
+
+.two-text {
+  color: var(--grey);
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 13px;
+}
+
+.two-main-text {
+  position: relative;
+  color: var(--bg);
+  font-family: Cardo, serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 27px;
+  padding-left: 24px;
+}
+
+.two-main-text::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--yelow);
+}
+
+.two-btn {
+  color: var(--bg);
+  font-family: Cardo, serif;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  min-width: 206px;
+  height: 66px;
+  border: 1px solid var(--yelow);
+  background-color: transparent;
+}
+
+/* ----------two------- end*/
