@@ -11,7 +11,7 @@
 }
 
 body {
-  font-family: var(--font-prime);
+  font-family: "Inter", sans-serif;
   background-color: var(--white);
   color: var(--grey);
 }
@@ -54,7 +54,7 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid #b4c7e7;
+  outline: 2px solid var(--blue);
 }
 
 .header-container {
@@ -70,42 +70,55 @@ img {
 .header {
   background-color: var(--bg);
 }
+
 .header-logo {
   margin-right: 35px;
 }
-.header-social-list {
+
+.header-soc-list {
   display: flex;
   margin-right: 260px;
 }
-.header-social-item {
+
+.header-soc-item {
   width: 45px;
   height: 45px;
   border: 2px solid var(--white);
-  background-color: var(--white);
 }
 
-.header-social-item:not(:last-child) {
+.header-soc-item:not(:last-child) {
   margin-right: 10px;
 }
 
-.header-social-link {
-  height: 100%;
+.header-soc-link {
   width: 100%;
+  height: 100%;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.header-soc-icons {
+}
+
 .header-nav {
 }
+
 .header-nav-list {
   display: flex;
 }
+
 .header-nav-item {
 }
 
 .header-nav-item:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 51.67px;
 }
 
 .header-link {
   display: block;
+  width: 100%;
   color: var(--white-font);
   font-size: 17px;
   font-weight: 400;
@@ -120,6 +133,13 @@ img {
   color: var(--yelow);
 }
 
+.header-cart-link {
+  width: 17px;
+  height: 17px;
+  margin-left: 39px;
+  margin-right: 51px;
+}
+
 .header-btn {
   min-width: 222px;
   height: 66px;
@@ -130,7 +150,115 @@ img {
   font-size: 19px;
   font-weight: 400;
   line-height: 1.5;
-  letter-spacing: 0.03;
+  letter-spacing: 0.03em;
   text-transform: capitalize;
-  margin-left: 107px;
 }
+
+/* ----------HERO-------start */
+
+.hero {
+  background-color: var(--bg);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+}
+
+.hero-subtitle {
+  color: var(--white);
+  font-family: Cardo, serif;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.hero-title {
+  color: var(--white);
+  font-family: Cardo, serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  margin-bottom: 24px;
+}
+
+.hero-descr {
+  color: var(--blue);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.58;
+  margin-bottom: 42px;
+  max-width: 562px;
+}
+
+.hero-btn {
+  color: var(--bg);
+  font-family: Cardo, serif;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  border: 2px solid var(--yelow);
+  background-color: var(--yelow);
+  min-width: 222px;
+  height: 66px;
+  margin-right: 51px;
+  margin-bottom: 47px;
+}
+
+.hero-link {
+  color: var(--white);
+  font-family: Cardo, serif;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+.hero-list {
+  display: flex;
+  gap: 70px;
+}
+
+.hero-item {
+}
+
+.hero-text {
+  color: var(--white);
+  font-family: Cardo, serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 12px;
+}
+
+.hero-num {
+  color: var(--blue);
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.59;
+}
+
+.hero-img {
+  margin-left: 75px;
+}
+
+/* ----------HERO------- end*/
+
+/* ----------two------- start*/

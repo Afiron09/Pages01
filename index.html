@@ -23,18 +23,32 @@
     <header class="header">
       <div class="container header-container">
         <div class="header-logo-wrapper">
-          <a href="./index.html" class="header-logo"
-            ><img src="./img/logo.png" alt="logo site" width="119" height="35"
-          /></a>
+          <a href="./index.html" class="header-logo">
+            <svg class="header-logo-icon" width="119" height="35">
+              <use href="./img/icons.svg#icon-logo-header"></use>
+            </svg>
+          </a>
           <ul class="header-soc-list">
             <li class="header-soc-item">
-              <a class="header-soc-link" href="#"></a>
+              <a class="header-soc-link" href="">
+                <svg class="header-soc-icons" width="9" height="15">
+                  <use href="./img/icons.svg#facebook"></use>
+                </svg>
+              </a>
             </li>
             <li class="header-soc-item">
-              <a class="header-soc-link" href="#"></a>
+              <a class="header-soc-link" href="">
+                <svg class="header-soc-icons" width="9" height="15">
+                  <use href="./img/icons.svg#twitter"></use>
+                </svg>
+              </a>
             </li>
             <li class="header-soc-item">
-              <a class="header-soc-link" href="#"></a>
+              <a class="header-soc-link" href="">
+                <svg class="header-soc-icons" width="9" height="15">
+                  <use href="./img/icons.svg#linkedIn"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
@@ -54,84 +68,96 @@
             </li>
           </ul>
         </nav>
-        <a href="#"></a>
+        <a class="header-cart-link" href="#">
+          <svg class="header-icon-cart" width="17" height="17">
+            <use href="./img/icons.svg#cupfood"></use>
+          </svg>
+        </a>
         <button class="header-btn" type="button">Order Today</button>
       </div>
     </header>
 
     <main>
-      <section class="one-section">
-        <p>Welcome to Pages!!!</p>
-        <h1>Your Books From The Best Writer.</h1>
-        <p>
-          Your Books From The Best Writer. We believe that reading books are
-          essential to a healthy culture. They’re where authors can connect with
-          readers.
-        </p>
-        <button type="button">order today</button>
-        <a href="#">Read Free Demo</a>
+      <section class="hero">
+        <div class="container hero-container">
+          <div class="">
+            <p class="hero-subtitle">Welcome to Pages!!!</p>
+            <h1 class="hero-title">Your Books From The Best Writer.</h1>
+            <p class="hero-descr">
+              We believe that reading books are essential to a healthy culture.
+              They’re where authors can connect with readers.
+            </p>
+            <button type="button" class="hero-btn">order today</button>
+            <a class="hero-link" href="#">Read Free Demo</a>
 
-        <ul>
-          <li>
-            <p>Pages:</p>
-            <p>250pages</p>
-          </li>
-          <li>
-            <p>Length:</p>
-            <p>10 Hours</p>
-          </li>
-          <li>
-            <p>Rating:</p>
-            <p>4.5/5 (305 ratings)</p>
-          </li>
-        </ul>
-        <img
-          src="./img/lamp.jpg"
-          alt="book The Dark Light"
-          width="592"
-          height="800"
-        />
+            <ul class="hero-list">
+              <li class="hero-item">
+                <p class="hero-text">Pages:</p>
+                <p class="hero-num">250pages</p>
+              </li>
+              <li class="hero-item">
+                <p class="hero-text">Length:</p>
+                <p class="hero-num">10 Hours</p>
+              </li>
+              <li class="hero-item">
+                <p class="hero-text">Rating:</p>
+                <p class="hero-num">4.5/5 (305 ratings)</p>
+              </li>
+            </ul>
+          </div>
+          <img
+            class="hero-img"
+            src="./img/lamp.jpg"
+            alt="book The Dark Light"
+            width="592"
+            height="800"
+          />
+        </div>
       </section>
+
       <section class="two">
-        <h2>The Author’s Book</h2>
-        <ul>
-          <li>
-            <img
-              src="./img/book-palm.jpg"
-              alt="book Atomic One`s"
-              width="285"
-              height="382"
-            />
-            <h3>Atomic One’s</h3>
-            <p>$ 13.84 USD</p>
-            <p>
-              As the book contains theoretical content as well as solved
-              questions.
-            </p>
-            <p>Printed Book</p>
-            <button type="button">Order Now</button>
-          </li>
-          <li>
-            <img
-              src="./img/book-lamp.jpg"
-              alt="sell book The Dark Light"
-              width="285"
-              height="382"
-            />
-            <h3>The Dark Light</h3>
-            <p>$ 86.11 USD</p>
-            <p>
-              As the book contains theoretical content as well as solved
-              questions.
-            </p>
-            <p>Printed Book</p>
-            <button type="button">Order Now</button>
-          </li>
-        </ul>
+        <div class="container">
+          <h2>The Author’s Book</h2>
+          <ul>
+            <li>
+              <img
+                src="./img/book-palm.jpg"
+                alt="book Atomic One`s"
+                width="285"
+                height="382"
+              />
+              <h3>Atomic One’s</h3>
+              <p>$ 13.84 USD</p>
+              <p>
+                As the book contains theoretical content as well as solved
+                questions.
+              </p>
+              <p>Printed Book</p>
+              <button type="button">Order Now</button>
+            </li>
+            <li>
+              <img
+                src="./img/book-lamp.jpg"
+                alt="sell book The Dark Light"
+                width="285"
+                height="382"
+              />
+              <h3>The Dark Light</h3>
+              <p>$ 86.11 USD</p>
+              <p>
+                As the book contains theoretical content as well as solved
+                questions.
+              </p>
+              <p>Printed Book</p>
+              <button type="button">Order Now</button>
+            </li>
+          </ul>
+        </div>
       </section>
+
       <section class="three">
         <img
-          src="./img/autor books.jpg"
+          src="./img/autor-books.jpg"
           alt="photo the Author books"
           width="525"
           height="620"
@@ -323,7 +349,7 @@
           <li>
             <img src="./img/3.jpg" alt="photo Angeline Flora" />
             <h3>Angeline Flora</h3>
-            <img src="" alt="" />
+            <img src="./img/" alt="" />
             <p>“ Creative Writing Skill”</p>
             <p>
               Sent an email after to books arrived to ask about the author & I
@@ -405,8 +431,8 @@
       </section>
       <section>
         <a href="./"
-          ><img src="./img/logo.png" alt="logo site" width="119" height="35"</a
-        >
+          ><img src="./img/logo.png" alt="logo site" width="119" height="35" />
+        </a>
         <ul>
           <li>
             <a href="">
